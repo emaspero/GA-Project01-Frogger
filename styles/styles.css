@@ -271,7 +271,7 @@ button:active {
 }
 
 .frog {
-  background-image: url(icons/frog.png);
+  background-image: url(/icons/frog.png);
   background-repeat: no-repeat;
   background-size: 64px;
   background-position: center;
