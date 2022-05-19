@@ -1,5 +1,4 @@
 # Project-01-Elisabetta's Frogger
---
 
 ### List technologies used:
 - HTML
