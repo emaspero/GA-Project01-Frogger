@@ -165,26 +165,26 @@ button:active {
 .carLeft,
 .carRight {
   background-color: #8f8f8f;
-  background-image: url(icons/road.png);
+  background-image: url(../icons/road.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carLeft.frog,
 .carRight.frog {
-  background-image: url(icons/frog.png), url(icons/road.png);
+  background-image: url(../icons/frog.png), url(../icons/road.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carLeft.car1L {
-  background-image: url(icons/car.png), url(icons/road.png);
+  background-image: url(../icons/car.png), url(../icons/road.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .carRight.car1R {
-  background-image: url(icons/baby-car.png), url(icons/road.png);
+  background-image: url(../icons/baby-car.png), url(../icons/road.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -194,7 +194,7 @@ button:active {
 .log4,
 .log6,
 .log8 {
-  background-image: url(icons/turtle.png);
+  background-image: url(../icons/turtle.png);
   background-repeat: no-repeat;
   /* background-size: auto; */
   background-size: 55px;
@@ -210,21 +210,21 @@ button:active {
 .log22,
 .log25,
 .log27 {
-  background-image: url(icons/trunk.png);
+  background-image: url(../icons/trunk.png);
   background-repeat: no-repeat;
   background-size: 55px;
   background-position: center;
 }
 
 .car1L {
-  background-image: url(icons/car.png);
+  background-image: url(../icons/car.png);
   background-repeat: no-repeat;
   background-size: 64px;
   background-position: center;
 }
 
 .car1R {
-  background-image: url(icons/baby-car.png);
+  background-image: url(../icons/baby-car.png);
   background-repeat: no-repeat;
   background-size: 64px;
   background-position: center;
@@ -235,7 +235,7 @@ button:active {
 .log4.frog,
 .log6.frog,
 .log8.frog {
-  background-image: url(icons/frog.png), url(icons/turtle.png);
+  background-image: url(../icons/frog.png), url(../icons/turtle.png);
   background-repeat: no-repeat;
   background-size: 55px;
   background-position: center;
@@ -257,14 +257,14 @@ button:active {
 }
 
 .end {
-  background-image: url(icons/pond.png);
+  background-image: url(../icons/pond.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
 .end.frog {
-  background-image: url(icons/frog.png), url(icons/pond.png);
+  background-image: url(../icons/frog.png), url(../icons/pond.png);
   background-repeat: no-repeat;
   background-size: 55px;
   background-position: center;
