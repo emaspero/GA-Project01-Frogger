@@ -1,0 +1,279 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: darkslategray;
+}
+
+.container1 {
+  background-color: darkslategray;
+  width: 200px;
+  height: 700px;
+}
+
+h1 {
+  color: white;
+  text-align: left;
+  font-weight: 200;
+}
+
+h3 {
+  color: white;
+  font-weight: 100;
+}
+
+a {
+    /* text-decoration: none; */
+    color: #D9E8E0;
+}
+
+ul {
+    padding-inline-start: 20px;
+    /* margin-top: 0px; */
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+button {
+  background-color: #ddd;
+  border-radius: 2px;
+  float: left;
+  border: none;
+  outline: none;
+  /* cursor: pointer; */
+  margin-right: 4px;
+  /* margin-bottom: 18.72px; */
+  padding: 8px 11px;
+  transition: 0.3s;
+  box-shadow: 1px 2px #adadad;
+}
+
+#startPauseBtn {
+  margin-bottom: 18.72px;
+}
+
+#restartBtn {
+    margin-bottom: 18.72px;;
+}
+
+/* Change background color of buttons on hover */
+button:hover {
+  background-color: #c2c2c2;
+}
+
+button:active {
+    background-color: 0px 0px;
+    transform: translateY(2px);
+}
+
+/* Create an active/current tablink class */
+/* .tab button.active {
+    background-color: #ccc;
+  } */
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 6px 12px;
+  padding-top: 0px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+/* Style the close button */
+.topright {
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.container2 {
+  background-color: darkslategray;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  background-image: url(https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80);
+  border: 0.5px solid white;
+  height: 576px;
+  width: 576px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid > div {
+  height: 64px;
+  width: 64px;
+  visibility: hidden;
+}
+
+.grass {
+  /* background-color: #8cbaa2; */
+  background-color: #73ab8d;
+}
+
+.icon {
+    background-image: url(/icons/grass.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center;
+}
+
+.icon.frog {
+    background-image: url(/icons/frog.png), url(/icons/grass.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center;
+  }
+
+.logLeft,
+.logRight {
+  background-color: #80b1b3;
+}
+
+.wave {
+    background-image: url(/icons/sea-water.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center;
+}
+
+/* .log1.wave,
+.log2.wave,
+.log4.wave,
+.log6.wave,
+.log8.wave {
+    background-image: url(/icons/turtle.png), url(/icons/sea-water.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center;
+} */
+
+.carLeft,
+.carRight {
+  background-color: #8f8f8f;
+  background-image: url(/icons/road.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carLeft.frog,
+.carRight.frog {
+  background-image: url(/icons/frog.png), url(/icons/road.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carLeft.car1L {
+  background-image: url(/icons/car.png), url(/icons/road.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carRight.car1R {
+  background-image: url(/icons/baby-car.png), url(/icons/road.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.log1,
+.log2,
+.log4,
+.log6,
+.log8 {
+  background-image: url(/icons/turtle.png);
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  background-size: 55px;
+  background-position: center;
+}
+
+.log10,
+/* .log11, */
+.log12,
+.log16,
+.log17,
+.log20,
+.log22,
+.log25,
+.log27 {
+  background-image: url(/icons/trunk.png);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: center;
+}
+
+.car1L {
+  background-image: url(/icons/car.png);
+  background-repeat: no-repeat;
+  background-size: 64px;
+  background-position: center;
+}
+
+.car1R {
+  background-image: url(/icons/baby-car.png);
+  background-repeat: no-repeat;
+  background-size: 64px;
+  background-position: center;
+}
+
+.log1.frog,
+.log2.frog,
+.log4.frog,
+.log6.frog,
+.log8.frog {
+  background-image: url(/icons/frog.png), url(/icons/turtle.png);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: center;
+}
+
+.log10.frog,
+/* .log11.frog, */
+.log12.frog,
+.log16.frog,
+.log17.frog,
+.log20.frog,
+.log22.frog,
+.log25.frog,
+.log27.frog {
+  background-image: url(/icons/frog.png), url(/icons/trunk.png);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: center;
+}
+
+.end {
+  background-image: url(/icons/pond.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.end.frog {
+  background-image: url(/icons/frog.png), url(/icons/pond.png);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: center;
+}
+
+.frog {
+  background-image: url(/icons/frog.png);
+  background-repeat: no-repeat;
+  background-size: 64px;
+  background-position: center;
+  /* z-index: -1; */
+}

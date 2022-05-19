@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Frogger</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container1">
+      <h1>Welcome to Frogger</h1>
+      <hr />
+
+      <button id="startPauseBtn">Start/Pause</button>
+      <button id="restartBtn">Restart</button> <br>
+
+      <h3>Time left: <span id="timeLeft"> </span></h3>
+      <h3>Result: <span id="result"></span></h3>
+
+      <div class="tab">
+      <button class="tablinks" onclick="openCredit(event, 'iconCredits')">Credits</button>
+      </div>
+
+      <div id="iconCredits" class="tabcontent">
+        <span class="topright" onclick="this.parentElement.style.display='none'">x</span>
+        <h3>Credits:</h3>
+        <ul>
+          <li>Background picture from <a href="https://unsplash.com/photos/xljtGZ2-P3Y">Unsplash</a>.</li>
+          <li>
+          Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware"> Good Ware</a>, <a href="https://www.flaticon.com/free-icons/ocean" title="ocean icons"> Freepik</a>,
+          <a href="https://www.flaticon.com/free-icons/road" title="road icons">Vectors Market</a>, <a href="https://www.flaticon.com/free-icons/car" title="car icons">DinosoftLabs</a> and
+          <a href="https://www.flaticon.com/free-icons/frog" title="frog icons">berkahicon</a> all on <a href="https://www.flaticon.com/">Flaticon</a>.
+          </li>
+          
+        </ul>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container2">
+      <div class="grid">
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass end"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="logRight log19"></div>
+        <div class="logRight log20 wave"></div>
+        <div class="logRight log21"></div>
+        <div class="logRight log22 wave"></div>
+        <div class="logRight log23"></div>
+        <div class="logRight log24 wave"></div>
+        <div class="logRight log25"></div>
+        <div class="logRight log26 wave"></div>
+        <div class="logRight log27"></div>
+        <div class="logLeft log1 wave"></div>
+        <div class="logLeft log2"></div>
+        <div class="logLeft log3 wave"></div>
+        <div class="logLeft log4"></div>
+        <div class="logLeft log5 wave"></div>
+        <div class="logLeft log6"></div>
+        <div class="logLeft log7 wave"></div>
+        <div class="logLeft log8"></div>
+        <div class="logLeft log9 wave"></div>
+        <div class="logRight log10"></div>
+        <div class="logRight log11 wave"></div>
+        <div class="logRight log12"></div>
+        <div class="logRight log13 wave"></div>
+        <div class="logRight log14"></div>
+        <div class="logRight log15 wave"></div>
+        <div class="logRight log16"></div>
+        <div class="logRight log17 wave"></div>
+        <div class="logRight log18"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="carLeft car1L"></div>
+        <div class="carLeft car2"></div>
+        <div class="carLeft car3"></div>
+        <div class="carLeft car1L"></div>
+        <div class="carLeft car2"></div>
+        <div class="carLeft car3"></div>
+        <div class="carLeft car1L"></div>
+        <div class="carLeft car2"></div>
+        <div class="carLeft car3"></div>
+        <div class="carRight car1R"></div>
+        <div class="carRight car2"></div>
+        <div class="carRight car3"></div>
+        <div class="carRight car1R"></div>
+        <div class="carRight car2"></div>
+        <div class="carRight car3"></div>
+        <div class="carRight car1R"></div>
+        <div class="carRight car2"></div>
+        <div class="carRight car3"></div>
+        <div class="carLeft car1L"></div>
+        <div class="carLeft car2"></div>
+        <div class="carLeft car3"></div>
+        <div class="carLeft car1L"></div>
+        <div class="carLeft car2"></div>
+        <div class="carLeft car3"></div>
+        <div class="carLeft car1L"></div>
+        <div class="carLeft car2"></div>
+        <div class="carLeft car3"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass start frog"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+        <div class="grass icon"></div>
+        <div class="grass"></div>
+      </div>
+    </div>
+
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
