@@ -1,15 +1,13 @@
+// Set the elements that we will be using/calling throughout the code:
 const timeLeft = document.querySelector("#timeLeft");
 const result = document.querySelector("#result");
-// console.log(result);
 const startPauseBtn = document.querySelector("#startPauseBtn");
 const cells = document.querySelectorAll(".grid div");
 const logsLeft = document.querySelectorAll(".logLeft");
-// console.log(logsLeft)
 const logsRight = document.querySelectorAll(".logRight");
 const carsLeft = document.querySelectorAll(".carLeft");
 const carsRight = document.querySelectorAll(".carRight");
 const restartBtn = document.querySelector("#restartBtn");
-const frog = document.querySelector(".frog");
 
 const width = 9;
 let currentIndex = 76;
@@ -17,8 +15,9 @@ let timerID;
 let currentTime = 21;
 let currentStatus;
 
+//Function to open the Credits tab:
 function openCredit(credit, cName) {
-  var i, tabcontent, tablinks;
+  // var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -31,6 +30,7 @@ function openCredit(credit, cName) {
   credit.currentTarget.className += " active";
 }
 
+//Function to move the Frog:
 function moveFrog(e) {
   // console.log(e);
   cells[currentIndex].classList.remove("frog");
@@ -59,8 +59,8 @@ function moveFrog(e) {
 
   cells[currentIndex].classList.add("frog");
 }
-// document.addEventListener("keyup", moveFrog);
 
+//Function that checks the current time left and that calls for functions which move the elements:
 function autoMoveElements() {
   currentTime--;
   timeLeft.textContent = currentTime;
@@ -68,15 +68,15 @@ function autoMoveElements() {
   logsRight.forEach((logRight) => moveLogRight(logRight));
   carsLeft.forEach((carLeft) => moveCarLeft(carLeft));
   carsRight.forEach((carRight) => moveCarRight(carRight));
-  //   lose();
-  //   win();
 }
 
+//Check if won or lost the game:
 function checkStatus() {
   lose();
   win();
 }
 
+//Below functions to move the logs, turtles (labelled as logs) and cars:
 function moveLogLeft(logLeft) {
   switch (true) {
     case logLeft.classList.contains("log1"):
@@ -258,18 +258,8 @@ function moveCarRight(carRight) {
   }
 }
 
-// if (
-//     cells[currentIndex].classList.contains("log1") ||
-//     cells[currentIndex].classList.contains("log2") ||
-//     cells[currentIndex].classList.contains("log4") ||
-//     cells[currentIndex].classList.contains("log6") ||
-//     cells[currentIndex].classList.contains("log8") 
-//     ) {
-//     cells[currentIndex].classList.remove("frog");
-//     cells[currentIndex] -= 1;
-//     cells[currentIndex].classList.add["frog"];
-// }
-
+//Functions that determine if the conditions to lose or win the game have been met:
+//The lose function also stops/clears the timer and removes the frog from the board.
 function lose() {
   if (
     cells[currentIndex].classList.contains("car1R") ||
@@ -308,6 +298,8 @@ function win() {
   }
 }
 
+//On click you van start and/or pause the game:
+//When you start the game it also makes the grid visible as it's hidden when the page loads.
 startPauseBtn.addEventListener("click", () => {
   if (timerID) {
     clearInterval(timerID);
@@ -327,6 +319,7 @@ function setVisibility(cell) {
   cell.style.visibility = "visible";
 }
 
+//The restart button reloads the page when clicked:
 restartBtn.addEventListener("click", () => {
   window.location.reload();
 });
