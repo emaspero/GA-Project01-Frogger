@@ -250,7 +250,7 @@ button:active {
 .log22.frog,
 .log25.frog,
 .log27.frog {
-  background-image: url(icons/frog.png), url(icons/trunk.png);
+  background-image: url(../icons/frog.png), url(../icons/trunk.png);
   background-repeat: no-repeat;
   background-size: 55px;
   background-position: center;
@@ -271,7 +271,7 @@ button:active {
 }
 
 .frog {
-  background-image: url(/icons/frog.png);
+  background-image: url(../icons/frog.png);
   background-repeat: no-repeat;
   background-size: 64px;
   background-position: center;
