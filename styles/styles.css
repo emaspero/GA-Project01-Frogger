@@ -126,14 +126,14 @@ button:active {
 }
 
 .icon {
-    background-image: url(icons/grass.png);
+    background-image: url(../icons/grass.png);
     background-repeat: no-repeat;
     background-size: 55px;
     background-position: center;
 }
 
 .icon.frog {
-    background-image: url(icons/frog.png), url(icons/grass.png);
+    background-image: url(../icons/frog.png), url(../icons/grass.png);
     background-repeat: no-repeat;
     background-size: 55px;
     background-position: center;
@@ -145,7 +145,7 @@ button:active {
 }
 
 .wave {
-    background-image: url(icons/sea-water.png);
+    background-image: url(../icons/sea-water.png);
     background-repeat: no-repeat;
     background-size: 55px;
     background-position: center;
